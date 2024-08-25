@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <main class="w-screen h-screen bg-slate-200 bg- p-2">
+      <div
+        class="max-w-xl mx-auto bg-white text-center border-2 border-black rounded-lg p-2 shadow-sm shadow-slate-500">
+        <h1 class="text-2xl font-sans font-semibold mb-4">Unit Converter</h1>
+        <ul id="unit-types" class="flex justify-center gap-6 mb-6 *:font-medium *:cursor-pointer">
+          <li
+            data-type="length"
+            onclick="changeUnitType('length')"
+            class="text-blue-700 border-b-2 border-blue-700 hover:text-blue-500 hover:border-blue-500">
+            Length
+          </li>
+          <li data-type="mass" onclick="changeUnitType('mass')" class="hover:text-blue-700">Mass</li>
+          <li data-type="temperature" onclick="changeUnitType('temperature')" class="hover:text-blue-700">
+            Temperature
+          </li>
+        </ul>
+        <div id="form-wrapper"></div>
+      </div>
+    </main>
+    <script src="script/units.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
