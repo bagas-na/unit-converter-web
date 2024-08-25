@@ -1,0 +1,38 @@
+<form action="" id="converter-form">
+    <div class="flex flex-col items-center mb-4">
+      <label for="input-value">Enter the length to convert</label>
+      <input id="input-value" type="text" class="max-w-60 w-full px-2 py-1 border rounded-md" />
+    </div>
+    <div class="flex flex-col items-center mb-4">
+      <label for="input-unit">Unit to convert from</label>
+      <select id="input-unit" class="max-w-60 w-full px-2 py-1 border rounded-md">
+        <option value="inch">Inch</option>
+        <option value="foot">Foot</option>
+        <option value="yard">Yard</option>
+        <option value="mile">Mile</option>
+        <option value="milimeter">Milimeter</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="meter">Meter</option>
+        <option value="kilometer">Kilometer</option>
+      </select>
+    </div>
+    <div class="flex flex-col items-center mb-4">
+      <label for="output-unit">Unit to convert to</label>
+      <select id="output-unit" class="max-w-60 w-full px-2 py-1 border rounded-md">
+        <option value="milimeter">Milimeter</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="meter">Meter</option>
+        <option value="kilometer">Kilometer</option>
+        <option value="inch">Inch</option>
+        <option value="foot">Foot</option>
+        <option value="yard">Yard</option>
+        <option value="mile">Mile</option>
+      </select>
+    </div>
+    <button
+      type="button"
+      onclick="handleConversion()"
+      class="px-4 py-1.5 text-black bg-slate-200 rounded-md hover:bg-slate-600 hover:text-white active:bg-slate-500">
+      Convert
+    </button>
+  </form>
